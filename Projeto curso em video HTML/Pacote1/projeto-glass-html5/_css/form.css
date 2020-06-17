@@ -1,0 +1,102 @@
+section#corpo-full{
+  border-right: none;
+  width: 100%;
+  margin: auto;
+}
+
+form{
+  width: 45%;
+  margin: 0 auto;
+}
+
+form #identificacao{
+  background: url("../_imagens/icone-contato.png") no-repeat;
+  background-position: right bottom;
+}
+
+form #endereco-user{
+  background: url("../_imagens/icone-endereco.png") no-repeat;
+  background-position: right bottom;
+}
+
+form #mensagem{
+  background: url("../_imagens/icone-mensagem.png") no-repeat;
+  background-position: right bottom;
+}
+
+form #adquirir{
+  background: url("../_imagens/icone-pagamento.png") no-repeat;
+  background-position: right bottom;
+}
+
+form #identificacao,#endereco-user,#mensagem,#adquirir{
+  margin-bottom: 20px;
+  padding: 2%;
+}
+
+form fieldset legend{
+  font-weight: bold;
+  color: #888888;
+}
+
+.inputs input,fieldset,select{
+  margin-left: 4px;
+  margin-bottom: 15px;
+}
+
+#identificacao fieldset input{
+  margin-right: 4px;
+}
+
+#identificacao fieldset{
+  padding: 10px;
+  width: 40%;
+  margin-left: 20px;
+}
+
+.logradouro{
+  display: flex;
+}
+.logradouro .inputs{
+  margin: 0 10px;
+}
+
+.inputs textarea{
+  width: 100%;
+  height: 90px;
+  margin-top: 3px;
+}
+
+.inputs input[type=text],[type=password],[type=email]{
+  width: 60%;
+  padding: 4px;
+}
+
+.inputs input[type=number]{
+  width: 50px;
+  padding: 4px;
+}
+
+.inputs input[type=date]{
+  width: 135px;
+  padding: 4px;
+}
+
+.inputs select{
+  width: 50%;
+  padding: 4px;
+}
+
+form input[type=submit]{
+  width: 100px;
+  padding: 8px 0px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inputs input,textarea{
+  outline: none;
+}

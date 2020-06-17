@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fotos</title>
+    <link href="_css/estilo.css" rel="stylesheet">
+    <link href="_css/form.css" rel="stylesheet">
+    <script src="_javascript/funcoes.js"></script>
+    <script>
+      function calc_total() {
+        var qtd = parseInt(document.getElementById('quantidade').value);
+        total = qtd * 1500;
+        document.getElementById('ctot').value = total;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="interface">
+      <header>
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/contato.png">
+        <nav>
+          <ul>
+            <li><a onmousemove="imagensnav('_imagens/home.png')" onmouseout="imagensnav('_imagens/contato.png')" href="index.html">Home</a></li> 
+            <li><a onmousemove="imagensnav('_imagens/especificacoes.png')" onmouseout="imagensnav('_imagens/contato.png')" href="specs.html">Especificações</a></li>
+            <li><a onmousemove="imagensnav('_imagens/fotos.png')" onmouseout="imagensnav('_imagens/contato.png')" href="fotos.html">Fotos</a></li>
+            <li><a onmousemove="imagensnav('_imagens/multimidia.png')" onmouseout="imagensnav('_imagens/contato.png')" href="multimidia.html">Multimídia</a></li>
+            <li><a onmousemove="imagensnav('_imagens/contato.png')" onmouseout="imagensnav('_imagens/contato.png')" href="fale-conosco.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="corpo-full">
+        <article id="formulario">
+          <hgroup>
+            <h2>Fale Conosco > Contato</h2>
+            <h1>Formulário de Contato</h1>
+            <h2>por Thiago Cabral</h2>
+            <h3>Atualizado em 01/Maio/2013</h3>
+          </hgroup>
+          <form method="POST" id="dContato" oninput="calc_total()">
+            <fieldset id="identificacao">
+              <legend>Identificação do Usuário</legend>
+              <div class="inputs">
+                <label for="nome">Nome:</label><input type="text" name="nome" placeholder="Nome completo">
+              </div>
+              <div class="inputs">
+                <label for="senha">Senha:</label><input type="password" name="senha" placeholder="8 dígitos">
+              </div>
+              <div class="inputs">
+                <label for="email">E-mail:</label><input type="email" name="email" placeholder="Separe por vírgulas">
+              </div>
+              <fieldset>
+                <legend>Sexo:</legend>
+                  <input type="radio" name="sexo"><span>Masculino</span><br>
+                  <input type="radio" name="sexo"><span>Feminino</span>
+              </fieldset>
+              <div class="inputs">
+                <label for="data">Data de Nascimento</label><input type="date" name="data">
+              </div>                
+            </fieldset>  
+              
+            <fieldset id="endereco-user">
+              <legend>Endereço do Usuário</legend>
+              <div class="logradouro">
+                <div class="inputs">
+                  <label for="endereco">Logradouro:</label><input type="text" name="endereco" placeholder="Rua, Av, Trav,...">
+                </div>
+                <div class="inputs">
+                  <label for="numero">Número:</label><input type="number" name="numero">
+                </div>
+              </div>  
+              <div class="inputs">
+                <label>Estado:</label>
+                <select>
+                  <option>Rio de janeiro</option>
+                  <option>São Paulo</option>
+                  <option>Mato Grosso do Sul</option>
+                  <option>Mato Grosso</option>
+                  <option>Bahia</option>
+                </select>
+              </div>  
+              <div class="inputs">
+                <label for="cidade">Cidade:</label><input type="text" name="cidade" placeholder="Sua cidade">
+              </div>
+            </fieldset>
+              
+            <fieldset id="mensagem">
+              <legend>Mensagem</legend>
+              <div class="inputs">
+                <label>Grau de urgência:</label><input type="range" min="0" max="10" step="2"> 
+              </div>  
+              <div class="inputs">
+                <label>Mensagem:</label><br>
+                <textarea placeholder="Sua mensagem"></textarea>
+              </div>
+            </fieldset>
+              
+            <fieldset id="adquirir">
+              <legend>Quero um Google Glass</legend>
+              <div class="inputs">
+                <input type="checkbox" name="google">
+                <label>Gostaria de adquirir um Google Glass quando disponível Cor:</label>
+              </div>
+              <div class="inputs">
+                <label for="cor">Cor:</label><input type="color" name="cor">
+              </div>
+              <div class="inputs">
+                <label for="quantidade">Quantidade:</label><input type="number" id="quantidade" name="quantidade">
+              </div>
+              <div class="inputs">
+                <label for="preco">Preço total: R$</label><input type="text" id="ctot" name="preco"> 
+              </div>
+            </fieldset>
+            <div class="enviar">
+              <input type="submit" value="Enviar">
+            </div>
+          </form>
+          
+        </article>
+      </section>
+      <footer>
+        <P>Copyright 2013 - by Thiago Cabral<br>
+        Facebook | Twitter</P>
+      </footer>
+    </div>
+  </body>
+</html>

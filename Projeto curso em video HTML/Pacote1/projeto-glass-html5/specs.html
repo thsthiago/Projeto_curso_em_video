@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fotos</title>
+    <link href="_css/estilo.css" rel="stylesheet">
+    <link href="_css/specs.css" rel="stylesheet">
+    <script src="_javascript/funcoes.js"></script>
+  </head>
+  <body>
+    <div id="interface">
+      <header>
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/especificacoes.png">
+        <nav>
+          <ul>
+            <li><a onmousemove="imagensnav('_imagens/home.png')" onmouseout="imagensnav('_imagens/especificacoes.png')" href="index.html">Home</a></li> 
+            <li><a onmousemove="imagensnav('_imagens/especificacoes.png')" onmouseout="imagensnav('_imagens/especificacoes.png')" href="specs.html">Especificações</a></li>
+            <li><a onmousemove="imagensnav('_imagens/fotos.png')" onmouseout="imagensnav('_imagens/especificacoes.png')" href="fotos.html">Fotos</a></li>
+            <li><a onmousemove="imagensnav('_imagens/multimidia.png')" onmouseout="imagensnav('_imagens/especificacoes.png')" href="multimidia.html">Multimídia</a></li>
+            <li><a onmousemove="imagensnav('_imagens/contato.png')" onmouseout="imagensnav('_imagens/especificacoes.png')" href="fale-conosco.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+        
+      <section id="corpofull">
+        <article>
+            <hgroup>
+              <h2>Glass > Especificações</h2>
+              <h1>Raio-X no Google Glass</h1>
+              <h2>por Thiago Cabral</h2>
+              <h3>Atualizado em 01/Maio/2013</h3>
+            </hgroup>           
+          <p>área destacada da imagem para ter mais informações sobre os recursos do Google Glass. 
+            Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+          <section id="conteudo">
+            <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+            <map name="meumapa">
+              <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela">
+              <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
+              <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela">
+              <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela">
+            </map>
+            <iframe src="google-glass.html" name="janela" scrolling="no" id="frame-spec"></iframe>
+          </section>
+        </article>
+      </section>
+
+      <footer>
+        <P>Copyright 2013 - by Thiago Cabral<br>
+        Facebook | Twitter</P>
+      </footer>
+    </div>
+  </body>
+</html>

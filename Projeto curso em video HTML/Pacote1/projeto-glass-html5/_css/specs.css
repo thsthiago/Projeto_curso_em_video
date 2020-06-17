@@ -1,0 +1,24 @@
+section#conteudo{
+  width: 100%;
+  margin: aut0;
+}
+
+section#corpofull{
+  width: 100%;
+  border-right: none;
+}
+
+section#conteudo{
+  border-right: none;  
+}
+
+section#conteudo map area{
+  outline: none;
+}
+
+iframe#frame-spec {
+  width: 40%;
+  height: 280px;
+  border: none;
+  overflow: hidden;
+}
